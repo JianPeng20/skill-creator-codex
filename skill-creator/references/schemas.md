@@ -109,9 +109,9 @@ Output from the grader agent. Located at `<run-dir>/grading.json`.
   },
   "execution_metrics": {
     "tool_calls": {
-      "Read": 5,
-      "Write": 2,
-      "Bash": 8
+      "exec_command": 8,
+      "apply_patch": 2,
+      "spawn_agent": 1
     },
     "total_tool_calls": 15,
     "total_steps": 6,
@@ -167,12 +167,10 @@ Output from the executor agent. Located at `<run-dir>/outputs/metrics.json`.
 ```json
 {
   "tool_calls": {
-    "Read": 5,
-    "Write": 2,
-    "Bash": 8,
-    "Edit": 1,
-    "Glob": 2,
-    "Grep": 0
+    "exec_command": 8,
+    "apply_patch": 1,
+    "spawn_agent": 2,
+    "read_mcp_resource": 1
   },
   "total_tool_calls": 18,
   "total_steps": 6,
@@ -198,7 +196,7 @@ Output from the executor agent. Located at `<run-dir>/outputs/metrics.json`.
 
 Wall clock timing for a run. Located at `<run-dir>/timing.json`.
 
-**How to capture:** When a subagent task completes, the task notification includes `total_tokens` and `duration_ms`. Save these immediately — they are not persisted anywhere else and cannot be recovered after the fact.
+**How to capture:** When a worker run completes, save the timing information immediately. If your environment exposes `total_tokens` and `duration_ms`, record them; otherwise capture wall-clock start/end times and compute `total_duration_seconds`.
 
 ```json
 {
@@ -225,8 +223,8 @@ Output from Benchmark mode. Located at `benchmarks/<timestamp>/benchmark.json`.
   "metadata": {
     "skill_name": "pdf",
     "skill_path": "/path/to/pdf",
-    "executor_model": "claude-sonnet-4-20250514",
-    "analyzer_model": "most-capable-model",
+    "executor_model": "gpt-5.4",
+    "analyzer_model": "gpt-5.4",
     "timestamp": "2026-01-15T10:30:00Z",
     "evals_run": [1, 2, 3],
     "runs_per_configuration": 3

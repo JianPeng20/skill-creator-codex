@@ -123,7 +123,7 @@ Write a JSON file with this structure:
     {
       "text": "The assistant used the skill's OCR script",
       "passed": true,
-      "evidence": "Transcript Step 2 shows: 'Tool: Bash - python ocr_script.py image.png'"
+      "evidence": "Transcript Step 2 shows: 'Tool: exec_command - python ocr_script.py image.png'"
     }
   ],
   "summary": {
@@ -134,9 +134,9 @@ Write a JSON file with this structure:
   },
   "execution_metrics": {
     "tool_calls": {
-      "Read": 5,
-      "Write": 2,
-      "Bash": 8
+      "exec_command": 8,
+      "apply_patch": 2,
+      "spawn_agent": 1
     },
     "total_tool_calls": 15,
     "total_steps": 6,
@@ -198,7 +198,7 @@ Write a JSON file with this structure:
   - **output_chars**: Total character count of output files (proxy for tokens)
   - **transcript_chars**: Character count of transcript
 - **timing**: Wall clock timing from timing.json (if available)
-  - **executor_duration_seconds**: Time spent in executor subagent
+  - **executor_duration_seconds**: Time spent in the executor worker
   - **total_duration_seconds**: Total elapsed time for the run
 - **claims**: Extracted and verified claims from the output
   - **claim**: The statement being verified

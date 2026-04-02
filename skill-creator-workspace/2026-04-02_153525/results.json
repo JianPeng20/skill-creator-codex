@@ -1,0 +1,277 @@
+{
+  "exit_reason": "max_iterations (2)",
+  "original_description": "Create, revise, and evaluate Codex skills. Use when the user wants to build a new skill, update an existing skill, define trigger conditions, add eval prompts or assertions, benchmark a skill against a baseline, optimize the SKILL.md description for better Codex triggering, or package/share a Codex-ready skill or plugin.",
+  "best_description": "Create, revise, and evaluate Codex skills. Use when the user wants to build a new skill, update an existing skill, define trigger conditions, add eval prompts or assertions, benchmark a skill against a baseline, optimize the SKILL.md description for better Codex triggering, or package/share a Codex-ready skill or plugin.",
+  "best_score": "1/2",
+  "best_train_score": "3/6",
+  "best_test_score": "1/2",
+  "final_description": "Use this skill when the task is about a Codex skill itself: planning a new skill, revising an existing one, or deciding how it should trigger. It covers drafting or improving `SKILL.md`, sharpening the name/description trigger surface, organizing bundled scripts or references, creating realistic test prompts and assertions, and designing or running skill evaluations such as with-skill vs baseline comparisons, benchmarks, review flows, and iteration plans. Also use it when the user wants to package or share a skill and needs to choose between delivering the skill folder directly, creating a zip archive, or wrapping it in a plugin. Do not use it for ordinary coding work, plugin scaffolding alone, or prompt-writing tasks that are not specifically about a Codex skill.",
+  "iterations_run": 2,
+  "holdout": 0.25,
+  "train_size": 6,
+  "test_size": 2,
+  "history": [
+    {
+      "iteration": 1,
+      "description": "Create, revise, and evaluate Codex skills. Use when the user wants to build a new skill, update an existing skill, define trigger conditions, add eval prompts or assertions, benchmark a skill against a baseline, optimize the SKILL.md description for better Codex triggering, or package/share a Codex-ready skill or plugin.",
+      "train_passed": 3,
+      "train_failed": 3,
+      "train_total": 6,
+      "train_results": [
+        {
+          "query": "\u8fd9\u4e2a skill \u5df2\u7ecf\u80fd\u7528\u4e86\uff0c\u4f46\u6211\u60f3\u7cfb\u7edf\u5730\u6bd4\u8f83 with-skill \u548c baseline \u7684\u6548\u679c\uff0c\u987a\u4fbf\u628a benchmark \u548c review \u9875\u9762\u4e5f\u8dd1\u8d77\u6765\u3002\u4f60\u5e2e\u6211\u5b89\u6392\u6574\u4e2a\u8bc4\u6d4b\u6d41\u7a0b\u3002",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "\u6211\u51c6\u5907\u628a\u505a\u597d\u7684 Codex skill \u5206\u4eab\u7ed9\u540c\u4e8b\uff0c\u4ed6\u4e0d\u662f\u5f88\u61c2\u672c\u5730\u5b89\u88c5\u3002\u4f60\u5e2e\u6211\u5224\u65ad\u5e94\u8be5\u76f4\u63a5\u7ed9 skill folder\u3001\u6253 zip\uff0c\u8fd8\u662f\u5305\u6210 plugin\u3002",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "\u770b\u4e00\u4e0b\u8fd9\u4e2a React \u7ec4\u4ef6\u4e3a\u4ec0\u4e48\u4f1a\u91cd\u590d\u6e32\u67d3\uff0c\u987a\u624b\u7ed9\u6211\u6539\u6389\u3002",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "\u6211\u521a\u628a\u4e00\u4e2a\u91cd\u590d\u6d41\u7a0b\u6574\u7406\u6210 Codex skill\uff0c\u76ee\u5f55\u5148\u653e\u5728 ~/.agents/skills/docx-redliner\u3002\u4f60\u5e2e\u6211\u628a SKILL.md\u3001\u6d4b\u8bd5 prompts \u548c\u7b2c\u4e00\u8f6e eval \u65b9\u6848\u4e00\u8d77\u8bbe\u8ba1\u51fa\u6765\u3002",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "\u5e2e\u6211\u5199\u4e00\u4e2a Python \u811a\u672c\uff0c\u628a\u8fd9\u4e2a CSV \u6309 create_time \u964d\u5e8f\u6392\u5e8f\u540e\u8f93\u51fa\u5230 /tmp/sorted.csv\u3002",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "\u6211\u5728\u60f3\u54c1\u724c\u540d\uff0c\u505a\u4e00\u4e2a\u5199\u4f5c\u98ce\u683c\u504f\u514b\u5236\u3001\u9002\u5408 B2B SaaS \u7684\u4e2d\u6587 naming brainstorm\u3002",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 1,
+      "test_failed": 1,
+      "test_total": 2,
+      "test_results": [
+        {
+          "query": "\u544a\u8bc9\u6211\u4eca\u5929\u4e0a\u6d77\u5929\u6c14\u600e\u4e48\u6837\uff0c\u987a\u4fbf\u5efa\u8bae\u6211\u7a7f\u4ec0\u4e48\u3002",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "\u6211\u60f3\u4f18\u5316\u4e00\u4e2a Codex skill \u7684 description\uff0c\u8ba9\u5b83\u66f4\u5bb9\u6613\u5728\u5408\u9002\u7684\u65f6\u5019\u88ab\u89e6\u53d1\u3002\u8bf7\u5e2e\u6211\u8bbe\u8ba1 should-trigger / should-not-trigger \u67e5\u8be2\uff0c\u5e76\u544a\u8bc9\u6211\u600e\u4e48\u8dd1\u4f18\u5316\u5faa\u73af\u3002",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        }
+      ],
+      "passed": 3,
+      "failed": 3,
+      "total": 6,
+      "results": [
+        {
+          "query": "\u8fd9\u4e2a skill \u5df2\u7ecf\u80fd\u7528\u4e86\uff0c\u4f46\u6211\u60f3\u7cfb\u7edf\u5730\u6bd4\u8f83 with-skill \u548c baseline \u7684\u6548\u679c\uff0c\u987a\u4fbf\u628a benchmark \u548c review \u9875\u9762\u4e5f\u8dd1\u8d77\u6765\u3002\u4f60\u5e2e\u6211\u5b89\u6392\u6574\u4e2a\u8bc4\u6d4b\u6d41\u7a0b\u3002",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "\u6211\u51c6\u5907\u628a\u505a\u597d\u7684 Codex skill \u5206\u4eab\u7ed9\u540c\u4e8b\uff0c\u4ed6\u4e0d\u662f\u5f88\u61c2\u672c\u5730\u5b89\u88c5\u3002\u4f60\u5e2e\u6211\u5224\u65ad\u5e94\u8be5\u76f4\u63a5\u7ed9 skill folder\u3001\u6253 zip\uff0c\u8fd8\u662f\u5305\u6210 plugin\u3002",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "\u770b\u4e00\u4e0b\u8fd9\u4e2a React \u7ec4\u4ef6\u4e3a\u4ec0\u4e48\u4f1a\u91cd\u590d\u6e32\u67d3\uff0c\u987a\u624b\u7ed9\u6211\u6539\u6389\u3002",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "\u6211\u521a\u628a\u4e00\u4e2a\u91cd\u590d\u6d41\u7a0b\u6574\u7406\u6210 Codex skill\uff0c\u76ee\u5f55\u5148\u653e\u5728 ~/.agents/skills/docx-redliner\u3002\u4f60\u5e2e\u6211\u628a SKILL.md\u3001\u6d4b\u8bd5 prompts \u548c\u7b2c\u4e00\u8f6e eval \u65b9\u6848\u4e00\u8d77\u8bbe\u8ba1\u51fa\u6765\u3002",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "\u5e2e\u6211\u5199\u4e00\u4e2a Python \u811a\u672c\uff0c\u628a\u8fd9\u4e2a CSV \u6309 create_time \u964d\u5e8f\u6392\u5e8f\u540e\u8f93\u51fa\u5230 /tmp/sorted.csv\u3002",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "\u6211\u5728\u60f3\u54c1\u724c\u540d\uff0c\u505a\u4e00\u4e2a\u5199\u4f5c\u98ce\u683c\u504f\u514b\u5236\u3001\u9002\u5408 B2B SaaS \u7684\u4e2d\u6587 naming brainstorm\u3002",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "description": "Use this skill when the task is about a Codex skill itself: planning a new skill, revising an existing one, or deciding how it should trigger. It covers drafting or improving `SKILL.md`, sharpening the name/description trigger surface, organizing bundled scripts or references, creating realistic test prompts and assertions, and designing or running skill evaluations such as with-skill vs baseline comparisons, benchmarks, review flows, and iteration plans. Also use it when the user wants to package or share a skill and needs to choose between delivering the skill folder directly, creating a zip archive, or wrapping it in a plugin. Do not use it for ordinary coding work, plugin scaffolding alone, or prompt-writing tasks that are not specifically about a Codex skill.",
+      "train_passed": 4,
+      "train_failed": 2,
+      "train_total": 6,
+      "train_results": [
+        {
+          "query": "\u6211\u51c6\u5907\u628a\u505a\u597d\u7684 Codex skill \u5206\u4eab\u7ed9\u540c\u4e8b\uff0c\u4ed6\u4e0d\u662f\u5f88\u61c2\u672c\u5730\u5b89\u88c5\u3002\u4f60\u5e2e\u6211\u5224\u65ad\u5e94\u8be5\u76f4\u63a5\u7ed9 skill folder\u3001\u6253 zip\uff0c\u8fd8\u662f\u5305\u6210 plugin\u3002",
+          "should_trigger": true,
+          "trigger_rate": 1.0,
+          "triggers": 1,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "\u8fd9\u4e2a skill \u5df2\u7ecf\u80fd\u7528\u4e86\uff0c\u4f46\u6211\u60f3\u7cfb\u7edf\u5730\u6bd4\u8f83 with-skill \u548c baseline \u7684\u6548\u679c\uff0c\u987a\u4fbf\u628a benchmark \u548c review \u9875\u9762\u4e5f\u8dd1\u8d77\u6765\u3002\u4f60\u5e2e\u6211\u5b89\u6392\u6574\u4e2a\u8bc4\u6d4b\u6d41\u7a0b\u3002",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "\u6211\u521a\u628a\u4e00\u4e2a\u91cd\u590d\u6d41\u7a0b\u6574\u7406\u6210 Codex skill\uff0c\u76ee\u5f55\u5148\u653e\u5728 ~/.agents/skills/docx-redliner\u3002\u4f60\u5e2e\u6211\u628a SKILL.md\u3001\u6d4b\u8bd5 prompts \u548c\u7b2c\u4e00\u8f6e eval \u65b9\u6848\u4e00\u8d77\u8bbe\u8ba1\u51fa\u6765\u3002",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "\u770b\u4e00\u4e0b\u8fd9\u4e2a React \u7ec4\u4ef6\u4e3a\u4ec0\u4e48\u4f1a\u91cd\u590d\u6e32\u67d3\uff0c\u987a\u624b\u7ed9\u6211\u6539\u6389\u3002",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "\u5e2e\u6211\u5199\u4e00\u4e2a Python \u811a\u672c\uff0c\u628a\u8fd9\u4e2a CSV \u6309 create_time \u964d\u5e8f\u6392\u5e8f\u540e\u8f93\u51fa\u5230 /tmp/sorted.csv\u3002",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "\u6211\u5728\u60f3\u54c1\u724c\u540d\uff0c\u505a\u4e00\u4e2a\u5199\u4f5c\u98ce\u683c\u504f\u514b\u5236\u3001\u9002\u5408 B2B SaaS \u7684\u4e2d\u6587 naming brainstorm\u3002",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "test_passed": 1,
+      "test_failed": 1,
+      "test_total": 2,
+      "test_results": [
+        {
+          "query": "\u6211\u60f3\u4f18\u5316\u4e00\u4e2a Codex skill \u7684 description\uff0c\u8ba9\u5b83\u66f4\u5bb9\u6613\u5728\u5408\u9002\u7684\u65f6\u5019\u88ab\u89e6\u53d1\u3002\u8bf7\u5e2e\u6211\u8bbe\u8ba1 should-trigger / should-not-trigger \u67e5\u8be2\uff0c\u5e76\u544a\u8bc9\u6211\u600e\u4e48\u8dd1\u4f18\u5316\u5faa\u73af\u3002",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "\u544a\u8bc9\u6211\u4eca\u5929\u4e0a\u6d77\u5929\u6c14\u600e\u4e48\u6837\uff0c\u987a\u4fbf\u5efa\u8bae\u6211\u7a7f\u4ec0\u4e48\u3002",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ],
+      "passed": 4,
+      "failed": 2,
+      "total": 6,
+      "results": [
+        {
+          "query": "\u6211\u51c6\u5907\u628a\u505a\u597d\u7684 Codex skill \u5206\u4eab\u7ed9\u540c\u4e8b\uff0c\u4ed6\u4e0d\u662f\u5f88\u61c2\u672c\u5730\u5b89\u88c5\u3002\u4f60\u5e2e\u6211\u5224\u65ad\u5e94\u8be5\u76f4\u63a5\u7ed9 skill folder\u3001\u6253 zip\uff0c\u8fd8\u662f\u5305\u6210 plugin\u3002",
+          "should_trigger": true,
+          "trigger_rate": 1.0,
+          "triggers": 1,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "\u8fd9\u4e2a skill \u5df2\u7ecf\u80fd\u7528\u4e86\uff0c\u4f46\u6211\u60f3\u7cfb\u7edf\u5730\u6bd4\u8f83 with-skill \u548c baseline \u7684\u6548\u679c\uff0c\u987a\u4fbf\u628a benchmark \u548c review \u9875\u9762\u4e5f\u8dd1\u8d77\u6765\u3002\u4f60\u5e2e\u6211\u5b89\u6392\u6574\u4e2a\u8bc4\u6d4b\u6d41\u7a0b\u3002",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "\u6211\u521a\u628a\u4e00\u4e2a\u91cd\u590d\u6d41\u7a0b\u6574\u7406\u6210 Codex skill\uff0c\u76ee\u5f55\u5148\u653e\u5728 ~/.agents/skills/docx-redliner\u3002\u4f60\u5e2e\u6211\u628a SKILL.md\u3001\u6d4b\u8bd5 prompts \u548c\u7b2c\u4e00\u8f6e eval \u65b9\u6848\u4e00\u8d77\u8bbe\u8ba1\u51fa\u6765\u3002",
+          "should_trigger": true,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": false
+        },
+        {
+          "query": "\u770b\u4e00\u4e0b\u8fd9\u4e2a React \u7ec4\u4ef6\u4e3a\u4ec0\u4e48\u4f1a\u91cd\u590d\u6e32\u67d3\uff0c\u987a\u624b\u7ed9\u6211\u6539\u6389\u3002",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "\u5e2e\u6211\u5199\u4e00\u4e2a Python \u811a\u672c\uff0c\u628a\u8fd9\u4e2a CSV \u6309 create_time \u964d\u5e8f\u6392\u5e8f\u540e\u8f93\u51fa\u5230 /tmp/sorted.csv\u3002",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        },
+        {
+          "query": "\u6211\u5728\u60f3\u54c1\u724c\u540d\uff0c\u505a\u4e00\u4e2a\u5199\u4f5c\u98ce\u683c\u504f\u514b\u5236\u3001\u9002\u5408 B2B SaaS \u7684\u4e2d\u6587 naming brainstorm\u3002",
+          "should_trigger": false,
+          "trigger_rate": 0.0,
+          "triggers": 0,
+          "runs": 1,
+          "pass": true
+        }
+      ]
+    }
+  ]
+}
